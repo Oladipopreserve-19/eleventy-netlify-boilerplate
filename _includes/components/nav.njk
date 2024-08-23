@@ -1,10 +1,112 @@
-<nav>
-  {% set navPages = collections.all | eleventyNavigation %}
-  <ul>
-    {%- for entry in navPages %}
-      <li>
-        <a href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>
-      </li>
-    {%- endfor %}
-  </ul>
-</nav>
+
+    <header
+      class="header"
+      data-header=""
+      style="
+        background-image: url(https://www.straightgreencard.com/assets/images/banner-bg.png);
+        background-size: cover;
+      "
+    >
+      <div
+        class="container"
+        style="
+          background-color: #120f264c;
+          padding: 20px 50px;
+          border-radius: 50px;
+        "
+      >
+        <a class="logo" href="https://www.straightgreencard.com/index.html"
+          ><img height="31" src="https://www.straightgreencard.com/assets/images/logo.svg" width="130" />
+        </a>
+        <nav class="navbar" data-navbar="">
+          <div class="navbar-top">
+            <a class="logo" href="https://www.straightgreencard.com/index.html"
+              ><img
+                alt="StraightGreenCard home"
+                height="31"
+                src="https://www.straightgreencard.com/assets/images/logo.svg"
+                width="130"
+              /> </a
+            ><button
+              aria-label="close menu"
+              class="nav-close-btn"
+              data-nav-toggler=""
+            >
+              <ion-icon aria-hidden="true" name="close-outline"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li><a class="navbar-link" href="https://www.straightgreencard.com/index.html">Home</a></li>
+            <li><a class="navbar-link" href="https://www.straightgreencard.com/about.html">About Us</a></li>
+            <li><a class="navbar-link" href="/">Blog</a></li>
+            <li><a class="navbar-link" href="https://www.straightgreencard.com/faq.html">FAQ</a></li>
+            <li><a class="navbar-link" href="https://www.straightgreencard.com/contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <div class="btn-group">
+          <a class="btn btn-primary" href="#service">Get Started</a>
+        </div>
+        <button aria-label="open menu" class="nav-open-btn" data-nav-toggler="">
+          <ion-icon aria-hidden="true" name="menu-outline"></ion-icon>
+        </button>
+
+        <div class="overlay" data-nav-toggler="" data-overlay=""></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div
+            class="top"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            <span>Welcome To</span>StraightGreenCard
+          </div>
+
+          <h1
+            class="h1 hero-title"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+          >
+            Your gateway to a brighter future
+          </h1>
+
+          <p
+            class="hero-text"
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+          >
+            We understand that navigating the immigration process can be
+            overwhelming, but fear not &ndash; we&#39;re here to turn your
+            dreams into reality.
+          </p>
+          <a
+            class="btn"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+            href="https://forms.gle/gf27KkBBejKvbHJs7"
+            style="border-radius: 100px; border: solid white 1px; color: white"
+            target="_blank"
+            >Get your free Evaluation!</a
+          >
+        </div>
+
+        <div class="hero-banner">
+          <figure class="hero-banner">
+            <img
+              alt="hero banner"
+              class="w-100"
+              height="823"
+              src="https://www.straightgreencard.com/assets/images/emt.png"
+              width="799"
+            />
+          </figure>
+        </div>
+      </div>
+    </header>
