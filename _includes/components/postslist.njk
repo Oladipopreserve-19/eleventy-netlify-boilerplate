@@ -1,6 +1,7 @@
 <section>
 	{% for post in postslist | reverse %}
 		<article{% if post.url == url %} data-current="current item"{% endif %}>
+		image
 			<h3>
 				<a href="{{ post.url | url }}">
 					{% if post.data.title %}
