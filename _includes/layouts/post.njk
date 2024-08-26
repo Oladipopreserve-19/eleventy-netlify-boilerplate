@@ -5,6 +5,12 @@ section: post
 
 <article>
   <h1>{{ title }}</h1>
+    <figure class="main-article__figure">
+      <img src="/public{{ image }}" alt="{{ imageAlt }}" class="article-img">
+      <figcaption>
+        {{ imageAlt }}
+      </figcaption>
+    </figure>
   <p>
     <small>
       <time datetime="{{ page.date | machineDate }}">{{ page.date | readableDate }}</time> by <a href="/authors/{{ author | slug }}/">{{ author }}</a>
