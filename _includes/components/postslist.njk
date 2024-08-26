@@ -39,7 +39,7 @@
 				</p>
 			{% endif %}
       <p class="read-more">
-        <a {% if post.url == url %} data-current="current item"{% endif %}>Read More</a>
+           <a href="{{ post.url | url }}">Read More</a>
       </p>
     </div>
   </div>
