@@ -3,7 +3,9 @@ layout: layouts/base2.njk
 section: post
 ---
 
-<article>
+<article class="main-article" >
+<div class="container container--narrow flow" >
+
   <h1>{{ title }}</h1>
     <figure class="main-article__figure">
       <img src="{{ image }}" alt="{{ imageAlt }}" class="article-img">
@@ -18,7 +20,7 @@ section: post
   </p>
 
   {{ layoutContent | safe }}
-
+ </div>
   {% if tags %}
     <p>
     {% for tag in tags %}
@@ -35,3 +37,22 @@ section: post
 <nav>
   <a href="{{ '/blog/' | url }}">← Blog index</a>
 </nav>
+
+
+<article class="main-article" >
+<div class="container container--narrow flow" >
+
+
+    <figure class="main-article__figure">
+      <img src="/public{{ image }}" alt="{{ imageAlt }}" class="article-img">
+      <figcaption>
+        {{ imageAlt }}
+      </figcaption>
+    </figure>
+
+
+
+    {{ content | safe}}
+
+ </div>
+</article>
