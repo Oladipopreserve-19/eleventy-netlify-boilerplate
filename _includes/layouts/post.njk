@@ -20,22 +20,38 @@ section: post
   </p>
 
   {{ layoutContent | safe }}
- </div>
-  {% if tags %}
-    <p>
+
+  <nav>
+  <a   class="btn"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+           
+            style="border-radius: 100px; margin-top: 30px; border:  solid rgb(97, 87, 160) 1px; color: rgb(97, 87, 160);"
+            href="{{ '/' | url }}">← Blog index</a>
+</nav>
+
+
+ {% if tags %}
+    <p  style="display: flex; flex-direction: row; gap: 5px; margin: 30px 0 30px 0">
+    <span style="color:#ffd167; cursor:pointer; text-decoration: underline;">Tag(s): </span>
     {% for tag in tags %}
       {%- if tag != "post" -%}
         {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-        <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+        <a data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+           
+            style="border-radius: 4px; padding: 0 5px; border: solid #ffd167 1px; color: rgb(97, 87, 160);" href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
       {%- endif -%}
     {% endfor %}
     </p>
   {% endif %}
+ </div>
+ 
 
 </article>
 
-<nav>
-  <a href="{{ '/' | url }}">← Blog index</a>
-</nav>
+
 
 

@@ -1814,7 +1814,7 @@ footer .b-text {
   padding: 1rem;
   background: #fff;
   position: relative;
-  gap: 50px;
+
   z-index: 1;
 }
 .blog-card .description h1,
@@ -2039,6 +2039,9 @@ blockquote {
     padding: 0;
     margin-top: 30px !important;
   }
+}
+.main-article__figure p {
+  color: #000 !important;
 }
 .main-article__figure figcaption {
   margin: 1rem 0;
