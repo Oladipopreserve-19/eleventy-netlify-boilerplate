@@ -1,6 +1,6 @@
 ---
 title: This is the first example post
-image: ../static/img/charlesdeluvio-nvrrz5pxx4q-unsplash.jpg
+image: /post/img/charlesdeluvio-nvrrz5pxx4q-unsplash.jpg
 imageAlt: sdgfcz
 date: 2019-01-01T00:00:00.000Z
 author: John Appleseed
