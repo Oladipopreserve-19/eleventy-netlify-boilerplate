@@ -1907,3 +1907,144 @@ footer .b-text {
     padding-left: 25px;
   }
 }
+
+/*///////
+lll
+///
+/////*/
+h1,
+h2,
+h4,
+p,
+figure,npm :start
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+.li {
+  list-style: none !important;
+}
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul:where([role="list"]),
+ol:where([role="list"]) {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f5f5f5 !important;
+}
+/*hero section*/
+
+.main {
+  position: absolute;
+  width: 100%;
+  height: 280px;
+  text-align: center;
+  top: 200px;
+  font-family: "Cardo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 110%;
+  /* or 93% */
+
+  text-align: center;
+  flex-direction: column !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -1px;
+
+  /* General Color/3 */
+
+  color: #ffffff;
+}
+.line1 {
+  width: 55px;
+  height: 0px;
+
+  margin: 40px 0;
+
+  /* Yellow */
+
+  border: 3px solid #ffc947;
+}
+.main p {
+  /* There are many variations of passages of Lorem Ipsum available, have suffered alteration in some form. */
+
+  width: 633px;
+  height: 62px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 180%;
+  /* or 34px */
+
+  text-align: center;
+  letter-spacing: -0.01em;
+
+  color: #b4c7e7;
+}
+@media all and (max-width: 1100px) {
+  .hero {
+    height: 50vh !important;
+  }
+  .main {
+    font-size: 40px;
+    top: 120px !important;
+  }
+  .text-block {
+    font-size: 15px;
+  }
+  .main p {
+    font-size: 15px;
+    width: 80%;
+  }
+  .line1 {
+    width: 35px;
+    border: 1.5 px solid #ffc947;
+    margin: 20px 0;
+  }
+}
+
+figcaption {
+  color: #232323;
+  font-weight: 700;blockquote {
+  padding-left: 40px;
+  border-left: 2px solid rgba(128, 128, 128, 0.4);
+}
+.main-article__figure {
+  margin-top: 1cm !important;
+}
+@media (max-width: 900px) {
+  blockquote {
+    padding-left: 25px;
+  }
+  .main-article__figure {
+    width: 100%;
+    margin: 0 !important;
+    padding: 0;
+    margin-top: 30px !important;
+  }
+}
+.main-article__figure figcaption {
+  margin: 1rem 0;
+  font-size: var(--fs-300);
+  opacity: 0.9;
+}
+figcaption {
+  color: #232323;
+}
