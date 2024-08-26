@@ -2,7 +2,7 @@
 	{% for post in postslist | reverse %}
 		  <div class="blog-card">
     <div class="meta">
-      <div class="photo" style="background-image: url({{ image }})"></div>
+      <div class="photo" style="background-image: url( {{ image }} )"></div>
       <ul class="details">
         <li class="author"><a href="/authors/{{ post.data.author | slug }}/">{{ post.data.author }}</a></li>
         <li class="date"><time datetime="{{ post.date | machineDate }}">
